@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/Estilo.CSS">
+        <title>Perfil de Empresa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .header{
+                text-align: center;
+                height: 300px;
+                padding: 12px;
+                background-image: url("https://media.istockphoto.com/photos/abstract-blue-background-picture-id840173468?k=20&m=840173468&s=612x612&w=0&h=VEMJFUmVudjILjUb6NkmIA5xLhVA4DTgajSKFpw6PKo=");
+                background-size: cover;
+            }
+            .logo{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            .name{
+                text-align: center;
+                margin-top: 14px;
+                color: white;
+            }
+            .contacts{
+                list-style: none;
+                text-align: center;
+                padding: 0;
+            }
+            .contacts li{
+                display: inline-block;
+                margin: 5px;
+            }
+            a{
+                text-decoration: none;
+                color: #ad0000;
+            }
+            a:hover{
+                color: #213bcf;
+            }
+            .correo{
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url("https://cdn-icons-png.flaticon.com/512/281/281769.png");
+            }
+            .facebook{
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url("https://cdn-icons-png.flaticon.com/512/145/145802.png");
+            }
+            .instagram{
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url("https://cdn-icons-png.flaticon.com/512/2111/2111463.png");
+            }
+            .telefono{
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url("https://cdn-icons-png.flaticon.com/512/724/724664.png");
+            }
+            .acerca{
+                padding: 10px;
+                border: 1px solid gray;
+                background-color: rgb(173, 172, 172);
+            }
+            .acerca h3{
+                color: black;
+                font-size: 16px;
+            }
+            .acerca p{
+                color: black;
+                font-size: 14px;
+            }
+            table, thead, th{
+                border: 1px solid  #D9DEF7;
+                border-collapse: collapse;
+                padding: 10px;
+                flex-flow: row wrap ;
+                justify-content: flex-end;
+                background-color: #BCD5D6;
+                color: #FF0000;
+                font-weight: bold;
+            }
+            table, tbody, tr, td{
+                border: 1px solid  #D9DEF7;
+                padding: 10px;
+                flex-flow: row wrap ;
+                justify-content: flex-end;
+                width: 16%;
+                background-color: #DCE7EC;
+                color: black;
+                font-weight: bold;
+            }
+            table, tfoot, tr, td{
+                border: 1px solid  #D9DEF7;
+                padding: 10px;
+                flex-flow: row wrap ;
+                justify-content: flex-end;
+                width: 16%;
+                background-color: #DCE7EC;
+                color: black;
+                font-weight: bold;
+            }
+            #Icono{
+                box-shadow: 10px 10px 10px #FFFFFF;
+                height: 300px;
+              }
+        </style>
+    </head>
+    <body bgcolor="#F2AF55">
+        <center><img src="img/icono.jpg" alt="Sistema de reservas para actividades recreativas" id="Icono"></center>
+        <br>
+        <hr>
+        <h1 align="center">Perfil empresa</h1>
+        <hr>
+        <div class="header"> 
+            <img class="logo" src="https://cdn.pixabay.com/photo/2019/07/03/20/04/store-4315394_960_720.jpg" alt="Foto empresa">
+            <h1 class="name">Nombre Empresa</h1>
+        </div>
+        <ul class="contacts">
+            <li>
+                <i class="correo"></i>
+                <a href="mailto:correoempresa@gmail.com">correoempresa@gmail.com</a>
+            </li>
+            <li>
+                <i class="facebook"></i>
+                <a href="https://facebook.com/nombreempresa">nombreempresa</a>
+            </li>
+            <li>
+                <i class="instagram"></i>
+                <a href="https://instagram.com/nombreempresa">@nombreempresa</a>
+            </li>
+            <li>
+                <i class="telefono"></i>
+                1-1111-1111
+            </li>
+        </ul>
+        <div class="acerca">
+            <h3>Información</h3>
+            <p>Una breve descripcion de la empresa.</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div align="center">
+            <table >
+                <thead>
+                    <th colspan="8">Tus actividades por cumplir</th>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td>Nombre Cliente</td>
+                        <td>Correo Cliente</td>
+                        <td>Celular Cliente</td>
+                        <td>Ocasion Reserva</td>
+                        <td>Fecha Reserva</td>
+                        <td>Hora Reserva</td>
+                        <td>Lugar Reserva</td>
+                        <td>Costo</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr align="center">
+                        <td colspan="8">No tienes actividades por cumplir</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar reserva</title>
+    <script>
+        function reserva(Respuesta){
+            alert("Su reserva ha sido exitosa")
+        }
+    </script>
+    <style>
+        body{
+            background-color: #F2AF55;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table, thead, th {
+            border: 3px solid #000000;
+            border-collapse: collapse;
+            padding: 10px;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            color: #000000;
+            font-weight: bold;
+            background-color: white;
+            width: 40%;
+            height: 40%;
+        }
+        #enviar {
+            color: #FFFFFF;
+            border: none;
+            background: #4CAF50;
+            padding: 10px 15px;
+            font-size: 20px;
+          }
+        #enviar:active {
+            background-color: #3e8e41;
+            transform: translateY(4px);
+          }
+        #Limpiar{
+            background-color: blue;
+            color:white; 
+            padding: 10px 15px;  
+            font-size: 20px;
+        }
+    </style>
+</head>
+    <div>
+        <table align="center">
+            <thead>
+                <th>
+                    <h1>Agendacion reserva</h1>
+                    <form action="Controlador/reservacion.php" method="POST" target="_blank">
+                        <hr>
+                        <br>
+                        <img src="https://ci3.googleusercontent.com/proxy/ixWuK1D_lW1ZK8gR_bwFelL80hmn1QHgNfzYj8Ip4PdGUUhUjbPRMbJuSKzh80eitDoUli_oxCEtmJsWoNR3S5Ly-7SX1YsPUpbHYg3SL9EuBl8jLKvOL8ZqCA=s0-d-e1-ft#https://cdn.pixabay.com/photo/2019/07/03/20/04/store-4315394_960_720.jpg" alt="Foto empresa" align="left" height="150px" width="150px">
+                        <p align="right">
+                            <label>Ocasion</label>
+                            <select name="oca">
+                                <optgroup>
+                                    <option>Ocasion</option>
+                                    <option>05-Deporte</option>
+                                    <option>09-Comida</option>
+                                </optgroup>
+                            </select>
+                            <br>
+                            <br>
+                            <label>Fecha reservacion</label>
+                            <input type="date" name="Fec_reservacion" value="Fecha reservacion">
+                            <br>
+                            <br>
+                            <label>Hora reservacion</label>
+                            <input type="time" name="Hor_reservacion" value="Hora reservacion">
+                            <br>
+                            <br>
+                           <label>Lugar reserva (Direccion)</label> 
+                            <input type="text" name="Lug_reserva">
+                            <hr>
+                            <br>
+                            <button type="reset" id="m_Limpiar" name="Limpiar" value="Limpiar">Limpiar</button>
+                            <button type="submit" id="m_enviar" name="Reservar" value="Reservar"><a href="https://www.google.com/url?q=http://paginaprincipalplantilla.html&amp;source=gmail-html&amp;ust=1687878902305000&amp;usg=AOvVaw0Ay9zM9_XF5Gv5Ivx6vlu6" target="_blank" rel="noreferrer"><span style="color:#ffffff">Reservar</span></a></button>
+                        </p>
+                    </form>
+                    <hr>
+                    <p>Generar anuncio donde se diga &quot;La reserva ha sido éxitosa.&quot;</p>
+                </th>
+            </thead>
+        </table>
+    </div>
+    </body></html>
