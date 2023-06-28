@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar reserva</title>
+    <script>
+        function reserva(Respuesta){
+            alert("Su reserva ha sido exitosa")
+        }
+    </script>
+    <style>
+        body{
+            background-color: #F2AF55;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table, thead, th {
+            border: 3px solid #000000;
+            border-collapse: collapse;
+            padding: 10px;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            color: #000000;
+            font-weight: bold;
+            background-color: white;
+            width: 40%;
+            height: 40%;
+        }
+        #enviar {
+            color: #FFFFFF;
+            border: none;
+            background: #4CAF50;
+            padding: 10px 15px;
+            font-size: 20px;
+          }
+        #enviar:active {
+            background-color: #3e8e41;
+            transform: translateY(4px);
+          }
+        #Limpiar{
+            background-color: blue;
+            color:white; 
+            padding: 10px 15px;  
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table align="center">
+        <thead>
+            <th>
+                <h1>Agendacion reserva</h1>
+                <form>
+                    <hr>
+                    <br>
+                    <img src="https://cdn.pixabay.com/photo/2019/07/03/20/04/store-4315394_960_720.jpg" alt="Foto empresa" align="left" height="150px" width="150px"/>
+                    <p align="right">
+                        <label>Ocasion</label>
+                        <select >
+                            <optgroup>
+                                <option>Ocasion</option>
+                                <option>05-Deporte</option>
+                                <option>20-Comida</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <br>
+                        <label>Fecha reservacion</label>
+                        <input type="date" name="Fecha reservacion" value="Fecha reservacion" required/>
+                        <br>
+                        <br>
+                        <label>Hora reservacion</label>
+                        <input type="time" name="Hora reservacion" value="Hora reservacion" required/>
+                        <br>
+                        <br>
+                       <label>Lugar reserva (Direccion)</label> 
+                        <input type="text" name="Lugar reserva" placeholder="Lugar reserva" required/>
+                        <hr>
+                        <br>
+                        <button type="reset" id="Limpiar" name="Limpiar" value="Limpiar">Limpiar</button>
+                        <button type="submit" id="enviar" name="Reservar" value="Reservar"><a href="paginaprincipalplantilla.html"><span style="color:#FFFFFF">Reservar</span></a></button>
+                    </p>
+                </form>
+                <hr>
+                <p>Generar anuncio donde se diga "La reserva ha sido éxitosa."</p>
+            </th>
+        </thead>
+    </table>
+</body>
+</html>
