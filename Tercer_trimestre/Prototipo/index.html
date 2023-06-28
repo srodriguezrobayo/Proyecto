@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/Estilo.CSS">
+        <title>Perfil de Empresa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .header{
+                text-align: center;
+                height: 300px;
+                padding: 12px;
+                background-image: url("https://media.istockphoto.com/photos/abstract-blue-background-picture-id840173468?k=20&m=840173468&s=612x612&w=0&h=VEMJFUmVudjILjUb6NkmIA5xLhVA4DTgajSKFpw6PKo=");
+                background-size: cover;
+            }
+            .logo{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            .name{
+                text-align: center;
+                margin-top: 14px;
+                color: white;
+            }
+            .contacts{
+                list-style: none;
+                text-align: center;
+                padding: 0;
+            }
+            .contacts li{
+                display: inline-block;
+                margin: 5px;
+            }
+            a{
+                text-decoration: none;
+                color: #ad0000;
+            }
+            a:hover{
+                color: #213bcf;
+            }
+            .correo{
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url("https://cdn-icons-png.flaticon.com/512/281/281769.png");
+            }
+            .facebook{
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url("https://cdn-icons-png.flaticon.com/512/145/145802.png");
+            }
+            .instagram{
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url("https://cdn-icons-png.flaticon.com/512/2111/2111463.png");
+            }
+            .telefono{
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                background-size: cover;
+                background-image: url("https://cdn-icons-png.flaticon.com/512/724/724664.png");
+            }
+            .acerca{
+                padding: 10px;
+                border: 1px solid gray;
+                background-color: rgb(173, 172, 172);
+            }
+            .acerca h3{
+                color: black;
+                font-size: 16px;
+            }
+            .acerca p{
+                color: black;
+                font-size: 14px;
+            }
+    table, thead, th {
+      border: 1px solid #000000;
+      border-collapse: collapse;
+      padding: 10px;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+
+    table, tbody, tr, td {
+      border: 1px solid #000000;
+      padding: 10px;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      width: 14%;
+      color: black;
+      font-weight: bold;
+    }
+
+    .ACitas {
+      text-align: right;
+      height: 300px;
+      padding: 12px;
+    }
+    button {
+        color: #FFFFFF;
+        border: none;
+        background: #4CAF50;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+    button:active {
+        background-color: #3e8e41;
+        transform: translateY(4px);
+      }
+      #Icono{
+        box-shadow: 10px 10px 10px #FFFFFF;
+        height: 300px;
+      }
+        </style>
+    </head>
+    <body bgcolor="#F2AF55">
+      <center><img src="img/icono.jpg" alt="Sistema de reservas para actividades recreativas" id="Icono"></center>
+      <br>
+      <hr>
+        <div id="menu">
+            <ul>
+              <li><a href="paginaprincipalplantilla.html">Inicio</a></li>
+              <li><a href="perfilcliente.html">Perfil</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="header"> 
+            <img class="logo" src="https://cdn.pixabay.com/photo/2019/07/03/20/04/store-4315394_960_720.jpg" alt="Foto empresa">
+            <h1 class="name">Nombre de la empresa</h1>
+        </div>
+        <ul class="contacts">
+            <li>
+                <i class="correo"></i>
+                <a href="mailto:correoempresa@gmail.com">correoempresa@gmail.com</a>
+            </li>
+            <li>
+                <i class="facebook"></i>
+                <a href="https://facebook.com/nombreempresa">nombreempresa</a>
+            </li>
+            <li>
+                <i class="instagram"></i>
+                <a href="https://instagram.com/nombreempresa">@nombreempresa</a>
+            </li>
+            <li>
+                <i class="telefono"></i>
+                1-1111-1111
+            </li>
+        </ul>
+        <div class="acerca">
+            <h3>Información</h3>
+            <p>Una corta descripcion de la empresa.</p>
+        </div>
+        <hr>
+        <table align="left">
+            <thead align="center" bgcolor="#A90000">
+              <tr>
+                <th colspan="7">Calendario</th>
+              </tr>
+              <tr>
+                <th colspan="7">Mes - Año</th>
+              </tr>
+            </thead>
+            <tbody align="center" bgcolor="#DCE7EC">
+              <tr>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miercoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+                <td>Sabado</td>
+                <td>Domingo</td>
+              </tr>
+              <tr>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td bgcolor="#00F4F4">10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>31</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <br>
+          <div class="ACitas">
+            <h4 align="left">Citas</h4>
+            <hr>
+            <p>Hay una actividad el dia 10 al 15:00 hrs</p>
+            <hr>
+            <p align="center">No hay actividades reservadas</p>
+            <hr>
+            <center><button><a href="Agendar.html"><span style="color: white;">Agendar</span></a></button></center>
+          </div>
+    </body>
+</html>
