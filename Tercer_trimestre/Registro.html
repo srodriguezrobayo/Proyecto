@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/89e863816f.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: "roboto" , sans-serif;
+        }
+
+        body{
+            background:#F2AF55 ;
+        }
+        .contener{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .acceso-contener{
+            display: flex;
+            width: 650px;
+            height: auto;
+            background: azure;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+        }
+        .registro, .acceso{
+            flex: 1;
+        }
+        .registro{
+            padding: 40px;
+            position: relative;
+        }
+        .registro h2{
+            color: gray;
+            margin-bottom: 30px;
+        }
+        .registro input{
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            margin-bottom: 25px;
+            border-top-style: none;
+            border-left-style: none;
+            border-right-style: none;
+            border-bottom: 1px solid gray;
+            color: #333;
+        }
+        .registro input:active,
+        .registro input:focus{
+            outline: none;
+        }
+        .registro .registrar{
+            width: auto;
+            padding: 10px;
+            background: orange;
+            color: azure;
+            font-size: 12px;
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+            cursor: pointer;
+        }
+        .registro .inicio{
+            width: auto;
+            padding: 10px;
+            background: orange;
+            color: azure;
+            font-size: 12px;
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+            cursor: pointer;
+        }
+        .acceso{
+            background-image: linear-gradient(to bottom right, aqua, rgb(98, 224, 98));
+            padding: 40px;
+        }
+        .acceso h2{
+            color: azure;
+            margin-bottom: 45px;
+        }
+        .acceso button{
+            width: 100%;
+            margin: 15px 0px;
+            padding: 10px;
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+            cursor: pointer;
+            position: relative;
+        }
+        .acceso .fac{
+            background: rgb(94, 94, 244);
+            border-style: none;
+            color: azure;
+        }
+        .acceso .tw{
+            background: #55acef;
+            border-style: none;
+            color: azure;
+        }
+        .acceso .goo{
+            background: rgb(207, 205, 205);
+            border-style: none;
+            color: azure;
+        }
+        .registro .usuario{
+            width: auto;
+            padding: 10px;
+            background: orange;
+            color: azure;
+            font-size: 12px;
+            box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+            cursor: pointer;
+        }
+    </style>
+        <body>
+            <div class="contener">
+                <div class="acceso-contener">
+                    <div class="registro">
+                        <h2>Registrarse</h2>
+                        <form action="Controlador/registrarse.php"  method="post">
+                            <p>Que usuario eres:</p>
+                            <button class="usuario"><a href="Registro.html"><span style="color: white;">Cliente</span></a></button>
+                            <button class="usuario"><a href="Registroempresa.html"><span style="color: white;">Empresa</span></a></button>
+                            <br><br>
+                            <input type="text" name="nombre" placeholder="Nombre" required> 
+                            <input type="email" name="correo" placeholder="Correo electronico" required>
+                            <input type="password" name="Contra" placeholder="contrase&ntilde;a" required>
+                            <input type="password" name="contras" placeholder="Confirmar contrase&ntilde;a" required>
+                            <input type="submit" name="regristrarc" value="Registrar">
+                            <br>
+                            <br>
+                            <p>Si ya estás registrado,<a href="Logincliente.html">Iniciar sesion</a></p>
+                        </form>
+                    </div>
+                <div class="acceso">
+                    <h2>iniciar sesion</h2>
+                    <a href="https://www.facebook.com/" ><button class="fac"><i class="fab fa-facebook-f"></i> acceder con facebook</button></a>
+                    <a href="https://twitter.com/?lang=es" ><button class="tw"><i class="fab fa-twitter"></i> acceder con twitter</button></a>
+                    <a href="https://accounts.google.com/v3/signin/identifier?dsh=S2013993656%3A1667324626598861&authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&hl=es&flowName=GlifWebSignIn&flowEntry=AddSession" ><button class="goo"><i class="fab fa-google"></i> acceder con google</button></a>
+                </div>
+            </div>
+        </div>
+        </body>
+</html>
