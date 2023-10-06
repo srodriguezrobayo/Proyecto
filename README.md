@@ -1,6 +1,7 @@
 # Bienvenidos a RESERVE SHOOT 
 Somos unas personas  con un joven **proyecto conocido como RESERVE SHOOT.** 
-![Logo RESERVE SHOOT](https://i.imgur.com/PjaYjue.png)
+
+![Logo RESERVE SHOOT](https://i.imgur.com/TKca3Fp.png)
 
 **Conformado por los siguiente integrantes :**
 
