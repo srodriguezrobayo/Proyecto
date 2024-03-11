@@ -1,0 +1,53 @@
+<div id="root" class="asterisco">
+  <div class="update-profile">
+
+      <form (ngSubmit)="onSubmit()" #empresaForm="ngForm" enctype="multipart/form-data">        <div class="flex">
+            <div class="inputBox">
+               <span>Nombre :</span>
+               <input type="text" name="Nombre_empresa" [(ngModel)]="empresa.Nombre_empresa" class="box">
+               <span>Teléfono :</span>
+               <input type="text" name="Telefono_empresa" [(ngModel)]="empresa.Telefono_empresa" class="box">
+             <select name="Ciudad_id_Ciudad" class="seleccionar" [(ngModel)]="empresa.Ciudad_id_Ciudad">
+                <option value="0" selected>Seleccione una ciudad</option>
+                <option value="1">Barranquilla</option>
+                <option value="2">Santo Tomas</option>
+                <option value="3">Soledad</option>
+                <option value="4">Cartagena</option>
+                <option value="5">Santa Rosa</option>
+                <option value="6">Turbaco</option>
+                <option value="7">Medellin</option>
+                <option value="8">La Estrella</option>
+                <option value="9">Bello</option>
+                <option value="10">Bogot&aacute;</option>
+                <option value="11">Facatativa</option>
+                <option value="12">Fusagasuga</option>
+                <option value="13">Santa Marta</option>
+                <option value="14">El Pi&ntilde;on</option>
+                <option value="15">Santa Ana</option>
+            </select>
+            <div>
+               <label for="Desc_empresa">Descripción de la empresa:</label>
+               <textarea
+                 name="Desc_empresa"
+                 class="descripcion"
+                 cols="30"
+                 rows="10"
+                 placeholder="Descripcion"
+                 [(ngModel)]="empresa.Desc_empresa"
+                 ngModel #Desc_empresa="ngModel"
+               ></textarea>
+             </div>
+             
+            </div>
+            <div class="inputBox">
+               <span>Nueva Contraseña :</span>
+               <input type="password" name="Password_empresa" placeholder="Ingresa Nueva Contraseña" class="box" [(ngModel)]="empresa.Password_empresa">
+            </div>
+         </div>
+         <input type="submit" value="Actualizar Perfil" name="update_profile" class="btn">
+         <a routerLink="/perfil_empresa">
+            <input type="button" value="Regresar" class="delete-btn">
+         </a>
+      </form>
+   </div>
+</div>

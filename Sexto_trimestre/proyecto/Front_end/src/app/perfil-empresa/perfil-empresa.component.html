@@ -1,0 +1,62 @@
+<div class="root body" id="asterisco">
+  <div class="navigation" [class.active]="sidebarActive">
+      <ul>
+        <li (mouseover)="setActiveLink()">
+            <a routerLink="/principal_empresa">
+                <span class="icon">
+                    <img src="../../assets/logo45p.png" alt="Logo" class="img-fluid" >
+                </span>
+                <span class="title">Reserve Shoot</span>
+            </a>
+          </li>
+        <li>
+            <a routerLink="/principal_empresa">
+                <span class="icon">
+                    <ion-icon name="file-tray-full-outline"></ion-icon>
+                </span>
+                <span class="title">Reservas</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/perfil_empresa">
+                <span class="icon">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </span>
+                <span class="title">Perfil de Empresa</span>
+            </a>
+        </li>
+        <li>
+            <a href="/inicio_sesion_empresa">
+                <span class="icon">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                </span>
+                <span class="title" (click)="cerrarsesion()">Cerrar Sesion</span>
+            </a>
+        </li>
+    </ul>
+    </div>
+</div>
+<div id="fondo">
+  <div id="root" class="asterisco" *ngFor="let empresa of empresa | async" >
+      <div class="main" [class.active]="sidebarActive">
+          <div class="topbar">
+              <div class="toggle" (click)="toggleSidebar()">
+                  <ion-icon name="menu-outline"></ion-icon>
+              </div>
+
+              <div class="user">
+                <img [src]="empresa.Foto_empresa" alt="foo">
+              </div>
+          </div>
+      <div class="container">
+          <div class="profile">
+             <img [src]="empresa.Foto_empresa" alt="perfil"><h3>{{empresa.Nombre_empresa}}</h3>
+             <p>Correo Electrónico: {{empresa.Correoelectronico_empresa}}</p>
+             <p>Teléfono: {{empresa.Telefono_empresa}}</p>
+             <p>Ciudad: {{empresa.nombre_ciudad}}</p>
+             <p>Descripcion: {{empresa.Desc_empresa}}</p>
+             <a [routerLink]="['../editar_P_empresa/actualizar/', empresa.Nit_Empresa]" class="btn">Actualizar Perfil</a>
+          </div>
+       </div>
+  </div>
+</div>

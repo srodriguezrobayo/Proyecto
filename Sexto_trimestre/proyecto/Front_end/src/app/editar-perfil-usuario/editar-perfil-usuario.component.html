@@ -1,0 +1,52 @@
+<div id="root" class="asterisco">
+  <div class="update-profile">
+
+      <form (ngSubmit)="onSubmit()" #usuarioForm="ngForm" enctype="multipart/form-data">
+      <div class="flex">
+            <div class="inputBox">
+               <span>Nombre :</span>
+               <input type="text" [(ngModel)]="cliente.Nombre_cliente" name="Nombre_cliente" class="box">
+               <span>Teléfono :</span>
+               <input type="text" [(ngModel)]="cliente.Telefono_cliente" name="Telefono_cliente" id="Telefono_cliente" class="box">
+               <span>Ciudad :</span>
+             <select name="Ciudad" class="seleccionar" [(ngModel)]="cliente.Ciudad_id_Ciudad" name="Ciudad_id_Ciudad">
+                <option value="0" selected>Seleccione una ciudad</option>
+                <option value="1">Barranquilla</option>
+                <option value="2">Santo Tomas</option>
+                <option value="3">Soledad</option>
+                <option value="4">Cartagena</option>
+                <option value="5">Santa Rosa</option>
+                <option value="6">Turbaco</option>
+                <option value="7">Medellin</option>
+                <option value="8">La Estrella</option>
+                <option value="9">Bello</option>
+                <option value="10">Bogot&aacute;</option>
+                <option value="11">Facatativa</option>
+                <option value="12">Fusagasuga</option>
+                <option value="13">Santa Marta</option>
+                <option value="14">El Pi&ntilde;on</option>
+                <option value="15">Santa Ana</option>
+            </select>
+               <select name="Genero" class="seleccionar" [(ngModel)]="cliente.Genero_idGenero" name="Genero_idGenero">
+                   <option value="0" selected>Seleccione un genero</option>
+                   <option value="1">Femenino</option>
+                   <option value="2">Masculino</option>
+                   <option value="3">Otro</option>
+                </select>
+            </div>
+            <div class="inputBox">
+               <span>Nueva Contraseña :</span>
+               <input type="password" [(ngModel)]="cliente.Password_cliente" name="Password_cliente" id="Password_cliente" placeholder="Ingresa Nueva Contraseña" class="box">
+            </div>
+            <div class="inputBox">
+               <span>Foto :</span>
+               <input type="file" accept="image/*" (change)="selectImage($event)" name="Foto_cliente" id="Foto_cliente" placeholder="Ingresa Nueva Foto" class="box">
+            </div>
+         </div>
+         <input type="submit" value="Actualizar Perfil" name="update_profile" class="btn">
+         <a routerLink="/perfil_cliente">
+            <input type="button" value="Regresar" class="delete-btn">
+         </a>
+      </form>
+   </div>
+</div>

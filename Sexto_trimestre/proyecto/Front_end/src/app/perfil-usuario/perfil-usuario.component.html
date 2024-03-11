@@ -1,0 +1,77 @@
+<div class="root body" id="asterisco">
+    <div class="navigation">
+      <ul>
+        <li>
+          <a routerLink="/principal">
+            <span class="icon">
+              <img src="../../assets/logo45p.png" alt="Logo" class="img-fluid">
+            </span>
+            <span class="title">Reserve Shoot</span>
+          </a>
+        </li>
+  
+        <li>
+          <a routerLink="/principal">
+            <span class="icon">
+              <ion-icon name="layers-outline"></ion-icon>
+            </span>
+            <span class="title">Reservas Disponibles</span>
+          </a>
+        </li>
+  
+        <li>
+          <a routerLink="/pendientes">
+            <span class="icon">
+              <ion-icon name="file-tray-stacked-outline"></ion-icon>
+            </span>
+            <span class="title">Mis Reservas</span>
+          </a>
+        </li>
+  
+        <li>
+          <a routerLink="/perfil_cliente">
+            <span class="icon">
+              <ion-icon name="person-circle-outline"></ion-icon>
+            </span>
+            <span class="title">Perfil de Usuario</span>
+          </a>
+        </li>
+  
+        <li>
+          <a href="/inicio_sesion" (click)="cerrarsesion()">
+            <span class="icon">
+              <ion-icon name="log-out-outline"></ion-icon>
+            </span>
+            <span class="title">Cerrar Sesion</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="fondo">
+    <div id="root" class="asterisco">
+      <div class="main" [class.active]="sidebarActive">
+        <div class="topbar">
+          <div class="toggle" (click)="toggleSidebar()">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+  
+          <div class="user">
+            <img *ngFor="let cliente of cliente | async" [src]="cliente.Foto_cliente" alt="">
+          </div>                   
+        </div>
+        <div class="container">
+            <div class="profile" *ngFor="let cliente of cliente | async">
+              <img [src]="cliente.Foto_cliente" alt="perfil">
+              <h3>{{cliente.Nombre_cliente}}</h3>
+              <p>Correo Electrónico: {{cliente.Correoelectronico_cliente}}</p>
+              <p>Teléfono: {{cliente.Telefono_cliente}}</p>
+              <p>Ciudad: {{cliente.nombre_ciudad}}</p>
+              <p>Género: {{cliente.Desc_genero}}</p>
+              <a [routerLink]="['/editar_P_usuario/actualizar/', cliente.id_Cliente]" class="btn">Actualizar Perfil</a>
+            </div>          
+        </div>
+      </div>
+    </div>
+  </div>
+  
