@@ -5,12 +5,10 @@ Somos unas personas  con un joven **proyecto conocido como RESERVE SHOOT.**
 
 **Conformado por los siguiente integrantes :**
 
-	Sergio David
-	Rodriguez Robayo
+	Sergio David Rodriguez Robayo
 	Daniel Alberto Rodriguez Pineda
 	Sneyder Vergel Alvarado
-	Jeiron David
-	Martínez Acevedo
+	Jeiron David Martínez Acevedo
 	Jair Andrés Carrillo Gelvez
 
 El presente proyecto tiene como fin los siguientes objetivos.
