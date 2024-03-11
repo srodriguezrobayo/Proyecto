@@ -1,0 +1,89 @@
+<div class="body root" id="asterisco">
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li (mouseover)="setActiveLink()">
+                    <a routerLink="/cliente">
+                        <span class="icon">
+                            <img src="../../assets/logo45p.png" alt="Logo" class="img-fluid" >
+                        </span>
+                        <span class="title">Reserve Shoot</span>
+                    </a>
+                </li>
+    
+                <li>
+                    <a routerLink="/cliente">
+                        <span class="icon">
+                            <ion-icon name="layers-outline"></ion-icon>
+                        </span>
+                        <span class="title">Reservas Disponibles</span>
+                    </a>
+                </li>
+    
+                <li>
+                    <a routerLink="/cliente/reservas">
+                        <span class="icon">
+                            <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                        </span>
+                        <span class="title">Mis Reservas</span>
+                    </a>
+                </li>
+    
+                <li>
+                    <a routerLink="/cliente/perfil">
+                        <span class="icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Perfil de Usuario</span>
+                    </a>
+                </li>
+    
+    
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Cerrar Sesion</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="main" [class.active]="sidebarActive">
+            <div class="topbar">
+                <div class="toggle" (click)="toggleSidebar()">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+    
+                <div class="user">
+                    <img src="../../assets/customer01.jpg" alt="">
+                </div>
+            </div>
+            
+    
+    
+            <div class="reservation-details-container">
+                <div class="reservation-image-container">
+                    <img src="../../assets/star.png" alt="Imagen del Restaurante">
+                </div>
+                <div class="reservation-text-container">
+                    <h1 class="reservation-name-heading">Nombre Reservación</h1>
+                    <h3 class="company-name-heading">Nombre de la empresa</h3>
+                    <p class="reservation-details-paragraph">Nombre: Juan Pérez</p>
+                    <p class="reservation-details-paragraph">Fecha: 15 de noviembre de 2023</p>
+                    <p class="reservation-details-paragraph">Hora: 19:00</p>
+                    <p class="reservation-details-paragraph">Número de personas: 4</p>
+                    <ul class="reservation-details-list">
+                        <li class="reservation-detail-item">Tipo de mesa: Ventana</li>
+                        <li class="reservation-detail-item">Instrucciones especiales: Sin gluten para uno de los comensales</li>
+                    </ul>
+                    <p class="reservation-details-paragraph">Estado: Confirmada</p>
+                    <p class="reservation-details-paragraph"><b>NOTA:</b> Si quiere editar algo relacionado con la reservacion comuniquese con la empresa con la que realizo la reserva.</p>
+        
+                    <button class="cancel-reservation-button">
+                        <i class="reservation-button-icon fas fa-times"></i> Cancelar Reserva
+                    </button>
+                </div>
+            </div>    
+</div>

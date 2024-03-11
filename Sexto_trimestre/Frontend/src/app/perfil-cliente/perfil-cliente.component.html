@@ -1,0 +1,75 @@
+<div class="root body" id="asterisco">
+    <div class="navigation">
+        <ul>
+            <li (mouseover)="setActiveLink()">
+                <a routerLink="/cliente">
+                    <span class="icon">
+                        <img src="../../assets/logo45p.png" alt="Logo" class="img-fluid" >
+                    </span>
+                    <span class="title">Reserve Shoot</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/cliente">
+                    <span class="icon">
+                        <ion-icon name="layers-outline"></ion-icon>
+                    </span>
+                    <span class="title">Reservas Disponibles</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/cliente/reservas">
+                    <span class="icon">
+                        <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                    </span>
+                    <span class="title">Mis Reservas</span>
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/cliente/perfil">
+                    <span class="icon">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Perfil de Usuario</span>
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </span>
+                    <span class="title">Cerrar Sesion</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="fondo">
+    <div id="root" class="asterisco">
+        <div class="main" [class.active]="sidebarActive">
+            <div class="topbar">
+                <div class="toggle" (click)="toggleSidebar()">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+    
+                <div class="user">
+                    <img src="../../assets/customer01.jpg" alt="">
+                </div>
+            </div>
+        <div class="container">
+            <div class="profile">
+               <img src="../../assets/default-avatar.png" alt="perfil"><h3>Juan</h3>
+               <p>Correo Electrónico: Juan@gmail.com</p>
+               <p>Teléfono: 3108136574</p>
+               <p>Ciudad: Barranquilla</p>
+               <p>Género: No binario</p>
+               <a routerLink="/cliente/perfil/editar" class="btn">Actualizar Perfil</a>
+            </div>
+         </div>
+    </div>
+</div>

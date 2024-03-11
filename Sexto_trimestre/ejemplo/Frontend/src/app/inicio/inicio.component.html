@@ -1,0 +1,20 @@
+<div class="p-3 mb-2 bg-warning text-dark bg-gradient">
+    <h1>Registro</h1>
+    <br>
+    <form (ngSubmit)="agregarNuevoUsuario()">
+        <div class="mb-3">
+            <label for="exampleInputName1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="NameHelp" name="Nombre" [(ngModel)]="nuevoUsuario.Nombre" required>
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Correo_electronico" [(ngModel)]="nuevoUsuario.Correo_electronico" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="Password_usuario" [(ngModel)]="nuevoUsuario.Password_usuario" required>
+        </div>
+        <p> Ya tienes cuenta<a class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" routerLink="/login"> Aqui</a></p>
+        <button type="submit" class="btn btn-primary" [disabled]="!formularioLleno()">Enviar</button>
+      </form>
+</div>

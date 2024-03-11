@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imgs/fondoxd.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.container-form {
+    width: 90%;
+    height: 99vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    padding: 1rem;
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: bold;
+    background-color: gold;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: black;
+
+}
+
+.message button:hover {
+    background-color: cyan;
+}
+
+.formulario {
+    width: 400px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: rgba(119, 233, 84, 0.602);
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.border-icon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+
+.border-icon:hover {
+    background-color: #4a4aee;
+    cursor: pointer;
+}
+
+.cuenta-gratis {
+    padding: 2rem 0;
+}
+
+.formulario input { /* aqui estan los placeholders */
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: black thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: 20px;
+    color: #000;
+}
+
+.formulario input[type="button"] { /* Aqui esta el boton de registrarte */
+    width: 60%;
+    margin: auto;
+    border: solid thin #1bb0ce;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: #1bb0ce;
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #222;
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
+/* Aumentar el tamaño del texto "Crear una cuenta" */
+.create-account {
+    font-size: 2rem; /* Puedes ajustar el tamaño según tus preferencias */
+  }
+  
+  /* Aumentar el tamaño del texto "Bienvenido a Reserve Shoot" */
+  .welcome-back .message h2 {
+    font-size: 3rem; /* Puedes ajustar el tamaño según tus preferencias */
+    -webkit-text-stroke: 1px #000
+  }
+  /* Aumentar el tamaño de los botones "Iniciar Sesión" y "Registrarse" */
+.message p{
+    font-size: 1.9rem ;
+    -webkit-text-stroke: 0.7px #000;
+    color: white;
+    font-weight: bold;
+   
+}
+.formulario input::placeholder {
+    color: black;
+  }
+  .welcome-back {
+    position: relative;
+  }
+  
+  .welcome-back img {
+    position: absolute;
+    top: 20%; /* Coloca el centro de la imagen en la mitad vertical de .welcome-back */
+    left: 50%; /* Coloca el centro de la imagen en la mitad horizontal de .welcome-back */
+    transform: translate(-50%, -50%); /* Centra la imagen correctamente */
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    z-index: -1; /* Coloca la imagen detrás del contenido de texto */
+  }
+p.cuenta-gratis{
+    font-size: 35px;
+    font-weight: bold;
+    color: #000;
+}

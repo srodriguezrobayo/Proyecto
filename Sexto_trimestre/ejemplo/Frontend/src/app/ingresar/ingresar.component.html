@@ -1,0 +1,19 @@
+<div class="p-3 mb-2 bg-info text-dark bg-gradient">
+    <h1>Login</h1>
+    <br>
+    <form (ngSubmit)="entrarUsuario()">
+        <div class="mb-3">
+            <label for="exampleInputName1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="NameHelp" name="Nombre" [(ngModel)]="Personaexistente.Nombre" required>
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Correo_electronico" [(ngModel)]="Personaexistente.Correo_electronico" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="Password_usuario" [(ngModel)]="Personaexistente.Password_usuario" required>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!formularioLleno()">Enviar</button>
+      </form>
+</div>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReservaYa - Tu plataforma de reservaciones</title>
+    <link rel="stylesheet" href="assets/css/styleejemplo.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="ReservaYa Logo">
+        </div>
+        <div class="header-text">
+            <h1>ReservaYa</h1>
+            <p>Tu plataforma de reservaciones</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="presentacion">
+        <h2>Bienvenido a ReservaYa</h2>
+        <p>Descubre los mejores destinos y haz tus reservaciones de manera fácil y rápida.</p>
+        <a href="#reservar" class="btn-reservar">¡Reserva ahora!</a>
+    </section>
+
+    <section id="destinos" class="destinos">
+        <h2>Explora Nuestros Destinos</h2>
+        <div class="destino">
+            <img src="destino1.jpg" alt="Destino 1">
+            <h3>Playa Paraíso</h3>
+            <p>Relájate en nuestras hermosas playas de aguas cristalinas.</p>
+        </div>
+        <div class="destino">
+            <img src="destino2.jpg" alt="Destino 2">
+            <h3>Montañas Serenas</h3>
+            <p>Disfruta de la tranquilidad de las montañas y paisajes impresionantes.</p>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Reservaciones en línea 24/7</li>
+            <li>Asistencia personalizada</li>
+            <li>Ofertas exclusivas para miembros</li>
+            <li>Garantía de mejor precio</li>
+        </ul>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <button type="submit" class="btn-contacto">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ReservaYa - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

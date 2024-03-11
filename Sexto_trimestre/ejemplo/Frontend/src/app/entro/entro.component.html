@@ -1,0 +1,29 @@
+<div class="p-3 mb-2 bg-success-subtle text-emphasis-success bg-gradient">
+    <h1>Bienvenido</h1>
+    <br>
+    <table>
+        <tr *ngFor="let usuario of usuario | async">
+            <td>Id Usuario: </td>
+            <td> {{usuario.Id}}</td>
+        </tr>
+        <tr *ngFor="let usuario of usuario | async">
+            <td>Nombre Usuario: </td>
+            <td> {{usuario.Nombre}}</td>
+        </tr>
+        <tr *ngFor="let usuario of usuario | async">
+            <td>Correo Electronico Usuario: </td>
+            <td> {{usuario.Correo_electronico}}</td>
+        </tr>
+        <tr *ngFor="let usuario of usuario | async">
+            <td>Contraseña Usuario: </td>
+            <td> {{usuario.Password_usuario}}</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <a routerLink="/formulario"><button type="button" class="btn btn-primary">Formulario</button></a>
+    <br>
+    <br>
+    <a class="btn btn-warning" (click)="Cerrarsession()" >Cerrar Sesion</a>
+    <br>
+</div>

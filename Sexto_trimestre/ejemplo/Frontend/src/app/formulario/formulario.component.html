@@ -1,0 +1,24 @@
+<div class="p-3 mb-2 bg-success-subtle text-emphasis-success bg-gradient">
+    <h1>Formulario</h1>
+    <br>
+    <a routerLink="/inicio"><p>&lt;Volver</p></a>
+    <br>
+    <form (ngSubmit)="nuevaInfo()" #formulario="ngForm">
+        <label for="tipo_comentario" class="form-label">Comentario</label>
+        <select class="form-select" aria-label="Default select example" name="tipo_comentario" [(ngModel)]="subirInfo.tipo_comentario" ngModel #tipo_comentario="ngModel">
+            <option value="1">XD</option>
+            <option value="2">LOL</option>
+        </select>
+        <br>
+        <label for="floatingTextarea" class="form-label">Escritura</label>
+        <textarea class="form-control" placeholder="Escritura" id="floatingTextarea" name="escritura" [(ngModel)]="subirInfo.escritura" ngModel #escritura="ngModel"></textarea>
+        <br>
+        <input type="text" name="Id_usuario"  placeholder="Usuario" [(ngModel)]="subirInfo.Id_usuario" ngModel #Id_usuario="ngModel">
+        <br>
+        <br>
+        <input type="text" name="Id_comelibros"  placeholder="admin" [(ngModel)]="subirInfo.Id_comelibros" ngModel #Id_comelibros="ngModel">
+        <br>
+        <br>
+        <button type="submit" class="btn btn-success" [disabled]="formulario.invalid">Subir</button>
+    </form>
+</div>

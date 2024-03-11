@@ -1,0 +1,134 @@
+<div id="asterisco">
+    <div class="body">
+        <div class="root">
+            <div class="container">
+                <div class="navigation" [class.active]="sidebarActive">
+                    <ul>
+                      <li (mouseover)="setActiveLink()">
+                          <a routerLink="/empresa">
+                              <span class="icon">
+                                  <img src="../../assets/logo45p.png" alt="Logo" class="img-fluid" >
+                              </span>
+                              <span class="title">Reserve Shoot</span>
+                          </a>
+                        </li>
+                      <li>
+                          <a routerLink="/empresa">
+                              <span class="icon">
+                                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                              </span>
+                              <span class="title">Reservas</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a routerLink="/empresa/perfil">
+                              <span class="icon">
+                                  <ion-icon name="person-circle-outline"></ion-icon>
+                              </span>
+                              <span class="title">Perfil de Empresa</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <span class="icon">
+                                  <ion-icon name="log-out-outline"></ion-icon>
+                              </span>
+                              <span class="title">Cerrar Sesion</span>
+                          </a>
+                      </li>
+                  </ul>
+                  </div>
+        
+                <div class="main" [class.active]="sidebarActive">
+                    <div class="topbar">
+                        <div class="toggle" (click)="toggleSidebar()">
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </div>
+        
+                        <div class="user">
+                            <img src="../../assets/customer01.jpg" alt="">
+                        </div>
+                    </div>
+        
+        
+                    <div class="container-form">
+                        <div class="info-form">
+                            <br>
+                            <img src="../../assets/Art.png" alt="Logo de la Empresa" class="logo">
+                            <h2>Nombre de la Empresa</h2>
+                            <h3>Informacion:</h3>
+                            <p>Puestos disponibles para restaurante en la ciudad de Bogotá.</p>
+                            <h3>Valor de la Reservacion:</h3>
+                            <p>$25.000 COP</p>
+                            <a href="#"><i class="fa fa-phone"></i> 313-322-7731</a>
+                            <a href="#"><i class="fa fa-envelope"></i> jaircarrillo@gmail.com</a>
+                            <a href="#"><i class="fa fa-map-marked"></i> Ciudad, País</a>
+                        </div>
+                      
+                        <form action="#" autocomplete="off">
+                            <label for="celebracion">Lugar</label>
+                            <br>
+                            <select name="celebracion" class="campo">
+                                <option value="0" selected>Seleccione un servicio a realizar</option>
+                                <option value="5">Boda</option>
+                                <option value="6">Deportiva</option>
+                                <option value="7">Fiestas</option>
+                                <option value="8">Concierto</option>
+                                <option value="9">Comida</option>
+                                <option value="10">Evento</option>
+                            </select>
+                            <br>
+                            <label for="Hora">Fecha de Reservación:</label>
+                            <div class="form-group">
+                                <input type="date" name="fecha_reservacion" class="campo">
+                            </div>
+                            <br>
+                            <label for="Hora">Hora de Reservación:</label>
+                            <div class="form-group">
+                                <input type="time" name="Hora_reservacion" class="campo">
+                            </div>
+                            <label for="lugar">Servicio</label>
+                            <br>
+                            <select name="lugar" class="campo">
+                                <option value="0" selected>Seleccione un Lugar para la Reservacion</option>
+                                <option value="1">Avenida 52g Hotel Tequendama</option>
+                                <option value="2">Avenida 567 Norte # 12-34 Hotel El Campin</option>
+                                <option value="3">Avenida 765 Sur # 34-56 Hotel Royale</option>
+                                <option value="4">Avenida 789 Sur #12-34 Hotel Starfish</option>
+                                <option value="5">Calle 123 #45-67 Hotel Whashington</option>
+                                <option value="6">Calle 43 36-48 sur Salon Comunal Bosa</option>
+                                <option value="7">Calle 987 Este #34-56 Salon Comunal Florida</option>
+                                <option value="8">Carrera 10 59-41 Hotel Jeferson</option>
+                                <option value="9">Carrera 45 dig 85 Hotel Vercetti</option>
+                                <option value="10">Carrera 456 # 78-90 Edificio Atrio</option>
+                                <option value="11">Carrera 54 85-39 Norte Hotel Eldorado</option>
+                                <option value="12">DG 48 D BIS SUR Hotel Cosmos</option>
+                                <option value="13">Diagonal 098 # 67-89 SENA</option>
+                                <option value="14">Diagonal 321 #56-78 Hotel Morrison</option>
+                            </select>
+                            <br>
+                            <label for="Nombre">Empresa:</label>
+                            <br>
+                            <select name="lugar" class="campo">
+                                <option value="0" selected>   </option>
+                                <option value="NIT">Empresa</option>
+                            </select>
+                            <br>
+                            <input type="number" class="campo precio" name="Valor" placeholder="Valor $" required>
+                            <br>
+                            <br>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="terminos" required>
+                                Acepto los Términos y Condiciones
+                            </label>
+                            <br><br>
+                            <input type="submit" name="enviar" value="Agendar" class="btn-enviar">
+                        </form>
+                        <br>
+                        <br>
+                        <br>
+                        <br>     
+        </div>
+    </div>
+</div>

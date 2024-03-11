@@ -1,0 +1,199 @@
+<div class="root">
+    <div id="asterisco">
+        <div class="body">
+            <div class="container">
+                <div class="navigation">
+                    <ul>
+                        <li (mouseover)="setActiveLink()">
+                            <a routerLink="/cliente">
+                                <span class="icon">
+                                    <img src="../../assets/logo45p.png" alt="Logo" class="img-fluid" >
+                                </span>
+                                <span class="title">Reserve Shoot</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/cliente">
+                                <span class="icon">
+                                    <ion-icon name="layers-outline"></ion-icon>
+                                </span>
+                                <span class="title">Reservas Disponibles</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/cliente/reservas">
+                                <span class="icon">
+                                    <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                                </span>
+                                <span class="title">Mis Reservas</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/cliente/perfil">
+                                <span class="icon">
+                                    <ion-icon name="person-circle-outline"></ion-icon>
+                                </span>
+                                <span class="title">Perfil de Usuario</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="log-out-outline"></ion-icon>
+                                </span>
+                                <span class="title">Cerrar Sesion</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main" [class.active]="sidebarActive">
+                    <div class="topbar">
+                        <div class="toggle" (click)="toggleSidebar()">
+                            <ion-icon name="menu-outline"></ion-icon>
+                        </div>
+            
+                        <div class="user">
+                            <img src="../../assets/customer01.jpg" alt="cliente">
+                        </div>
+                    </div>
+                    <main>
+                        <h2 class="titulo-principal">Agenda de Reservaciones Disponibles Por las Empresas</h2>
+                        <div class="contenedor-productos">
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/Art.png" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Arturo Calle</h3>
+                                    <p class="producto-desc">Tienda de Ropa</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button type="button" class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/cab.png" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">La Cabrera</h3>
+                                    <p class="producto-desc">Restaurante </p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/davivienda (1).png" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Davivienda</h3>
+                                    <p class="producto-desc">Banco</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/crees.jpg" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Creeps And Waffles</h3>
+                                    <p class="producto-desc">restaurante de guafles</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/Fala.png" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Falabella</h3>
+                                    <p class="producto-desc">Tienda de Ropa</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/pain.jpg" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Paintball Club</h3>
+                                    <p class="producto-desc">Zona de juego de Paintball</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/gaseosa.png" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Postobon</h3>
+                                    <p class="producto-desc">Fabrica de Gaseosa</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/sali.jpg" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Salitre Magico</h3>
+                                    <p class="producto-desc">Parque de atracciones mecanicas</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/star.png" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Starbucks Coffe</h3>
+                                    <p class="producto-desc">Cafeteria</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/Logo_Exito (1).png" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Exito</h3>
+                                    <p class="producto-desc">Almacen</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/alqueria (1).png" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Alqueria</h3>
+                                    <p class="producto-desc">Fabrica de Leche</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="productos">
+                                <img class="producto-imagen" src="../../assets/tele (1).jpeg" alt="">
+                                <div class="producto-detalles">
+                                    <h3 class="producto-titulo">Teleperformance</h3>
+                                    <p class="producto-desc">Multinacional</p>
+                                    <a routerLink="/cliente/reservar">
+                                    <button class="producto-agendar">Agendar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> 
+                        <br>
+                        <br>
+                        <br>
+                        <div class="btn-toolbar" role="group" aria-label="First group">
+                            <a routerLink="/cliente" class="btn btn-arrow">&lt;&lt;</a>
+                            <a routerLink="/cliente" class="btn">1</a>
+                            <a routerLink="/cliente" class="btn">2</a>
+                            <a routerLink="/cliente" class="btn">3</a>
+                            <a routerLink="/cliente" class="btn">4</a>
+                            <a routerLink="/cliente" class="btn btn-arrow">&gt;&gt;</a>
+                          </div>                       
+                        </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

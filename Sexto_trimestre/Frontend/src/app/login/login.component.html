@@ -1,0 +1,37 @@
+<div id="asterisco">
+    <div id="body">
+        <div class="container-form sign-in">
+            <form class="formulario">
+              <br><br><br><br><br><br><br><br>
+                <h2 class="create-account">Iniciar Sesion</h2>
+                <p class="cuenta-gratis">¡Ingresa tus Datos!</p>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <a routerLink="/login"><input type="radio" name="tipoUsuario" value="cliente" checked></a>
+                    Cliente
+                  </label>
+
+                  <label class="radio-label">
+                    <a routerLink="/login-empresa"><input type="radio" name="tipoUsuario" value="empresa"></a>
+                    Empresa
+                  </label>
+                </div>
+                <br><br>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Contraseña">
+                <input type="button" value="Iniciar Sesion">
+            </form>
+            <div class="welcome-back">
+                <div class="message">
+                    <br><br>
+                    <h2>Bienvenido de nuevo</h2>
+                    <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                    <a routerLink="/Registrarcliente"><button class="sign-in-btn">Registrarse como cliente</button></a>
+                    <br>
+                    <a routerLink="/Registrarempresa"><button class="sign-in-btn">Registrarse como empresa</button></a>
+                </div>
+                <img src="../../assets/logoxd.png" alt="Imagen de superposición" id="alfrente">
+            </div>
+        </div>
+    </div>
+</div>

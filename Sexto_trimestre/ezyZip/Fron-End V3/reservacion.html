@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Shoot</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/style4.css">
+    <link rel="icon" href="assets/imgs/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- =============== Navigacion ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="assets/imgs/logo45p.png" alt="Logo" class="img-fluid" >
+                        </span>
+                        <span class="title">Reserve Shoot</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="layers-outline"></ion-icon>
+                        </span>
+                        <span class="title">Reservas Disponibles</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index2.html">
+                        <span class="icon">
+                            <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                        </span>
+                        <span class="title">Mis Reservas</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </span>
+                        <span class="title">Perfil de Usuario</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Cerrar Sesion</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/customer01.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="container-form">
+                <div class="info-form">
+                    <br>
+                    <img src="assets/imgs/Art.png" alt="Logo de la Empresa" class="logo">
+                    <h2>Nombre de la Empresa</h2>
+                    <h3>Informacion:</h3>
+                    <p>Puestos disponibles para restaurante en la ciudad de Bogotá.</p>
+                    <h3>Valor de la Reservacion:</h3>
+                    <p>$25.000 COP</p>
+                    <a href="#"><i class="fa fa-phone"></i> 313-322-7731</a>
+                    <a href="#"><i class="fa fa-envelope"></i> jaircarrillo@gmail.com</a>
+                    <a href="#"><i class="fa fa-map-marked"></i> Ciudad, País</a>
+                </div>
+              
+                <form action="#" autocomplete="off">
+                    <label for="Nombre">Nombre y Email de Usuario:</label>
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
+                        
+                        <input type="email" name="email" placeholder="Tu Email" class="campo">
+                    </div>
+                    <label for="Nombre">Documento y Telefono de Usuario:</label>
+                    <div class="form-group">
+                        <input type="text" name="Documento" placeholder="Documento" class="campo">
+                        
+                        <input type="email" name="telefono" placeholder="Telefono" class="campo">
+                    </div>
+                    <label for="Hora">Fecha y Hora de Reservación:</label>
+                    <div class="form-group">
+                        <input type="date" name="fecha_reservacion" class="campo">
+                        
+                        <input type="time" name="hora_reservacion" class="campo">
+                    </div>
+                    <label for="numero_personas">Número de Personas y Tipo de Reservacion:</label>
+                    <div class="form-group">
+                        <input type="number" name="numero_personas" placeholder="Número de Personas" class="campo">
+        
+        
+                        <select name="celebracion" class="campo">
+                            <option value="aniversario">Aniversario</option>
+                            <option value="cumpleanos">Cumpleaños</option>
+                            <option value="boda">Boda</option>
+                            <option value="deportivo">Deportiva</option>
+                            <option value="fiesta">Fiestas</option>
+                            <option value="concierto">Concierto</option>
+                            <option value="comida">Comida</option>
+                            <option value="evento">Evento</option>
+                        </select>
+                        
+        
+                    </div>
+                
+                    <textarea name="mensaje" placeholder="Detalles especificos"></textarea>
+                    <br>
+                    <br>
+                    <br>
+        
+                    <label>
+                        <input type="checkbox" name="terminos" required>
+                        Acepto los Términos y Condiciones
+                    </label>
+                    <input type="submit" name="enviar" value="Agendar" class="btn-enviar">
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+
+
+
+        <script src="assets/js/main.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    </body>
+        
+</html>

@@ -1,0 +1,50 @@
+<div id="root" class="asterisco">
+    <div class="update-profile">
+   
+        <form action="" method="post" enctype="multipart/form-data">
+           <img src="../../assets/default-avatar.png" alt="perfil">      <div class="flex">
+              <div class="inputBox">
+                 <span>Nombre :</span>
+                 <input type="text" name="update_name" value="Juan" class="box">
+                 <span>Correo Electrónico :</span>
+                 <input type="email" name="update_email" value="Juan@gmail.com" class="box">
+                 <span>Teléfono :</span>
+                 <input type="text" name="update_phone" value="3108136574" class="box">
+               <select name="Ciudad" class="seleccionar">
+                  <option value="0" selected>Seleccione una ciudad</option>
+                  <option value="1">Barranquilla</option>
+                  <option value="2">Santo Tomas</option>
+                  <option value="3">Soledad</option>
+                  <option value="4">Cartagena</option>
+                  <option value="5">Santa Rosa</option>
+                  <option value="6">Turbaco</option>
+                  <option value="7">Medellin</option>
+                  <option value="8">La Estrella</option>
+                  <option value="9">Bello</option>
+                  <option value="10">Bogot&aacute;</option>
+                  <option value="11">Facatativa</option>
+                  <option value="12">Fusagasuga</option>
+                  <option value="13">Santa Marta</option>
+                  <option value="14">El Pi&ntilde;on</option>
+                  <option value="15">Santa Ana</option>
+              </select>
+                 <span>Descripcion de la empresa :</span>
+                 <textarea name="Desc_empresa" class="descripcion" cols="30" rows="10" placeholder="Descripcion"></textarea>
+              </div>
+              <div class="inputBox">
+                 <input type="hidden" name="old_pass" value="81dc9bdb52d04dc20036dbd8313ed055">
+                 <span>Contraseña Anterior :</span>
+                 <input type="password" name="update_pass" placeholder="Ingresa contraseña anterior" class="box">
+                 <span>Nueva Contraseña :</span>
+                 <input type="password" name="new_pass" placeholder="Ingresa Nueva Contraseña" class="box">
+                 <span>Confirma Contraseña :</span>
+                 <input type="password" name="confirm_pass" placeholder="Confirma Nueva Contraseña" class="box">
+                 <span>Actualiza tu foto :</span>
+                 <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" class="box">
+              </div>
+           </div>
+           <input type="submit" value="Actualizar Perfil" name="update_profile" class="btn">
+           <a routerLink="/empresa/perfil" class="delete-btn">Regresar</a>
+        </form>
+     </div>
+</div>
