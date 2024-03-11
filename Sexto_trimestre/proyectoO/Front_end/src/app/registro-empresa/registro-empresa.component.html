@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro-empresa.component.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <img class="avatar">
+        <h1>Registro de Empresa</h1>
+        <form (ngSubmit)="onSubmit()" #usuarioForm="ngForm">
+
+
+            <label for="nit">NIT:</label>
+            <input type="text" id="nit" name="Nit_Empresa" placeholder="Nombre" required [(ngModel)]="empresa.Nit_Empresa">
+
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="Nombre_empresa" placeholder="Nombre" required [(ngModel)]="empresa.Nombre_empresa">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="text" id="correo" name="Correoelectronico_empresa" placeholder=" Correo" required [(ngModel)]="empresa.Correoelectronico_empresa">
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="Password_empresa" placeholder=" Contraseña" required [(ngModel)]="empresa.Password_empresa">
+
+            <label for="telefono">Telefono:</label>
+            <input type="number" id="telefono" name="Telefono_empresa" placeholder=" Telefono" required [(ngModel)]="empresa.Telefono_empresa">
+
+            <label  for="ciudad" >Ciudad:</label>
+              <select  id="ciudad" placeholder="Seleccion Tu Ciudad"  name="Ciudad_id_Ciudad" required [(ngModel)]="empresa.Ciudad_id_Ciudad">
+                  <option value="1">Barranquilla</option>
+                  <option value="2">Santo Tomas</option>
+                  <option value="3">Soledad</option>
+                  <option value="4">Cartagena</option>
+                  <option value="5">Santa Rosa</option>
+                  <option value="6">Turbaco</option>
+                  <option value="7">Medellin</option>
+                  <option value="8">La Estrella</option>
+                  <option value="9">Bello</option>
+                  <option value="10">Bogota</option>
+                  <option value="11">Facatativa</option>
+                  <option value="12">Fusagasuga</option>
+                  <option value="13">Santa Marta</option>
+                  <option value="14">El pinon</option>
+                  <option value="15">Santa Ana</option>
+
+
+            </select><br>
+
+
+
+            <button type="submit" [disabled]="!usuarioForm.form.valid">Registrarse</button>
+        </form>
+
+        <p>
+          Si ya estas registrado
+        </p>
+        <p>
+
+             <a routerLink="../inicio_sesion_empresa">Inicia Sesi&oacute;n como Empresa</a>
+
+        </p>
+
+        <p>
+          <a routerLink="../inicio_sesion">Inicia Sesi&oacute;n como Cliente</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil-usuario.component.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Perfil de Usuario</title>
+</head>
+
+<body>
+    <div class="green-row">
+        <img src="img/Logoletras2.png" alt="Logo" width="170" id="logo">
+        <a href="principal"><button >Inicio</button></a>
+        <a href="inicio_sesion"><button>Cerrar Sesión</button></a>
+
+    </div>
+    <div class="container">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="img/usuario-sin-foto.png" alt="Imagen de perfil" width="150">
+            </div>
+            <div class="profile-info">
+                <h1>Nombre de Usuarioo</h1>
+                <p>Correo Electrónico: usuario@example.com</p>
+                <p>Ubicación: Ciudad, País</p>
+            </div>
+        </div>
+        <div class="edit-profile">
+            <h2>Editar Perfil</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="Nombre de Usuario">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="text" id="email" name="email" value="usuario@example.com">
+
+                <label for="ubicacion">Ubicación:</label>
+                <input type="text" id="ubicacion" name="ubicacion" value="Ciudad, País">
+
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

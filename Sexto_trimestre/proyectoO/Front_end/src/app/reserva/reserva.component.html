@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reserva.component.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Formulario de Reserva</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="logo">
+            <img src="img/logo2.png" alt="Logo de jair" width="100px">
+        </div>
+        <form (ngSubmit)="onSubmit()" #reservaForm="ngForm">
+            <div class="form-header">
+                <h2>Formulario de Reserva</h2>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ocasion">Ocacion:</label>
+              <select class="form-input" id="ocasion" name="Servicio_idServicio" required [(ngModel)]="reserva.Servicio_idServicio">
+                  <option value="5">Boda</option>
+                  <option value="6">Deportiva</option>
+                  <option value="7">Fiestas</option>
+                  <option value="8">Concierto</option>
+                  <option value="9">Comida</option>
+                  <option value="10">Evento</option>
+              </select>
+              </div>
+
+
+            <div class="form-group">
+                <label class="form-label" for="fechaReservacion">Fecha De Reservación:</label>
+                <input class="form-input" type="date" id="fechaReservacion" name="Fecha_reservacion" required [(ngModel)]="reserva.Fecha_reservacion">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="horaReservacion">Hora De Reservación:</label>
+                <input class="form-input" type="time" id="horaReservacion" name="Hora_reservacion" required [(ngModel)]="reserva.Hora_reservacion">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="Lugar">Lugar De Reservacion:</label>
+              <select class="form-input" id="Lugar" placeholder="Lugar/Direccion/ciudad" name="Lugar_reservacion_idLugar_reservacion" required [(ngModel)]="reserva.Lugar_reservacion_idLugar_reservacion">
+                  <option value="1">Hotel Tequendama/Avenida 52g -58/Bogota</option>
+                  <option value="2">Hotel El Campin/Avenida 567 Norte # 12-34/Santa Marta</option>
+                  <option value="3">Hotel Royale/Avenida 765 Sur # 34-56/La Estrella</option>
+                  <option value="4">Hotel Starfish/Avenida 789 Sur # 12-34/Medellin</option>
+                  <option value="5">Hotel Whashington/Calle 123 # 45-67/Turbaco</option>
+                  <option value="6">Salon Comunal Bosa/Calle 43 36-48 sur/Barranquilla</option>
+                  <option value="7">Salon Comunal Florid/Calle 987 Este # 34-56/Santo Tomas</option>
+                  <option value="8">Hotel Jeferson/carrera 10 59-41/Fusagasuga</option>
+                  <option value="9">Hotel Vercetti/Carrera 45 dig 85/Soledad</option>
+                  <option value="10">Edificio Atrio/Carrera 456 # 78-90/Cartagena</option>
+                  <option value="11">Hotel Eldorado/Carrera 54 85-39 norte/El pinon</option>
+                  <option value="12">Hotel Cosmos/DG 48 D BIS SUR/Bello </option>
+                  <option value="13">SENA/Diagonal 098 # 67-89/Santa Ana</option>
+                  <option value="14">Hotel Morrison/Diagonal 321 # 56-78/Facatativa</option>
+                  <option value="15"></option>
+
+
+              </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="Empresa">Empresa:</label>
+                <select class="form-input" id="Empresa" name="Empresa_Nit_Empresa" required [(ngModel)]="reserva.Empresa_Nit_Empresa">
+                    <option value="15227895">Arturo Calle</option>
+
+                    <option value="15227896">Teleperformance</option>
+
+                    <option value="15227898">Davivienda</option>
+
+                    <option value="24645485">Muncher</option>
+
+                    <option value="55475457">Éxito</option>
+
+                    <option value="57745875">Sistemas en Línea</option>
+
+                    <option value="87877448">Alqueria</option>
+
+                    <option value="97556741">Postobon</option>
+
+
+                </select>
+                </div>
+
+            <div class="form-group">
+              <label class="form-label" for="Cliente">Número De Documento:</label>
+              <input class="form-input" type="text" id="Cliente" name="Cliente_N_Documento" placeholder="Escriba Su N.Documento" required [(ngModel)]="reserva.Cliente_N_Documento">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="Valor">Valor:</label>
+              <input class="form-input" type="text" id="Valor" name="Valor" required [(ngModel)]="reserva.Valor">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="Empleado" >Empleado:</label>
+              <select class="form-input" id="Empleado" placeholder="Escoge el Empleado que te ayudo"  name="Empleados_id_empleado" required [(ngModel)]="reserva.Empleados_id_empleado">
+                  <option value="55">Jeiron Martinez</option>
+                  <option value="74">Jair Carrillo</option>
+                  <option value="79">Sneyder Vergel</option>
+                  <option value="92">Sergio Rodriguez</option>
+                  <option value="100">Daniel Rodriguez</option>
+
+              </select>
+            </div>
+
+
+
+            <div class="form-buttons">
+
+                <button class="form-button" type="submit" [disabled]="!reservaForm.form.valid">Agendar</button>
+
+                <button class="form-button" type="reset">Limpiar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
