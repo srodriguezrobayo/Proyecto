@@ -1,0 +1,3 @@
+Base de datos BD ( CleverCloud ): Host: bxj8zacvd1keambgbsos-mysql.services.clever-cloud.com
+Backend( Render ): https://despliegue-backend-7h6l.onrender.com
+Frontend ( AWS ): https://d1rtryxi5dldmw.cloudfront.net
