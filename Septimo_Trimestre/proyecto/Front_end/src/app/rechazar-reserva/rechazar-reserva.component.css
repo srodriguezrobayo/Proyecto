@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+.return-button {
+    background-color: #38d39f; 
+    color: white;
+    padding: 14px 20px;
+    margin-top: 30px; 
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(50, 50, 50, 0.5);
+}
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(41, 41, 41, 0.1);
+    border: 3px solid #38d39f;
+    position: relative; 
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 1.5px;
+}
+.details-section {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-align: left; 
+}
+.details-section p {
+    margin: 5px 0;
+    margin-bottom: 5px 0;
+    padding-bottom: 2.5px;
+    margin-top: 5px 0;
+    padding-top: 2.5px;
+    color: #555;
+}
+.placeholder {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 24px;
+}
+#rechazar-reserva {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+#rechazar-label {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #555;
+    display: block;
+    text-align: center;
+}
+.button-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+.button {
+    background-color: #ff6961;
+    color: white;
+    padding: 14px;
+    margin-top: 0.5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    font-size: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(50, 50, 50, 0.5);
+}
+.button-two {
+      background-color: #38d39f;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 28px;
+      cursor: pointer;
+      font-size: 25px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(50, 50, 50, 0.5);
+      width: 160px;
+      margin-left: 50px; 
+}
+.button:hover {
+    background-color: #a32822;
+}
+.button-two:hover {
+    background-color: #60b397;
+}
+.long-text {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    max-width: 92%;
+    max-height: 9.2em;
+    overflow-y: auto;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}

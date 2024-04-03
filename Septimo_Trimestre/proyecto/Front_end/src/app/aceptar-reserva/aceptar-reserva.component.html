@@ -1,0 +1,32 @@
+<body>
+<div class="container" *ngFor="let reserva of reservaciones | async">
+  <h1>Detalles de la Reserva</h1>
+  <div class="details-section">
+    <p><strong>Id de la reserva:</strong> {{ reserva.Id_Reservacion }}</p>
+    <p *ngFor="let servicio of servicio | async"><strong>Servicio:</strong> {{ servicio.Nombre_servicio }}</p>
+    <p><strong>Fecha:</strong> {{ reserva.Fecha_reservacion | date:'dd/MM/yyyy'}}</p>
+    <p><strong>Hora:</strong> {{ reserva.Hora_reservacion }}</p>
+    <p *ngFor="let lugar of lugar | async"><strong>Lugar:</strong> {{ lugar.Direccion_lugarreserv }}, {{lugar.Nom_lugreserv}}</p>
+    <p><strong>Cantidad de Personas:</strong> {{ reserva.Cant_person }}</p>
+    <p class="long-text"><strong>Condiciones:</strong> {{ reserva.Condiciones }}</p>
+    <p><strong>Estatus:</strong> {{ reserva.Estatus }}</p>
+  </div>
+  <h1>Datos del Cliente</h1>
+  <div class="details-section" *ngFor="let cliente of cliente | async">
+    <p><strong>Cliente:</strong> {{ cliente.Nombre_cliente }}</p>
+    <p><strong>Correo Electrónico:</strong> <a [href]="'mailto:' + cliente.Correoelectronico_cliente"> {{ cliente.Correoelectronico_cliente }}</a></p>
+    <p><strong>Número de Contacto:</strong> {{ cliente.Telefono_cliente }}</p>
+  </div>
+  <form (ngSubmit)="aceptarReserva()">
+    <div class="placeholder">
+      <label id="valor-label" for="valor-reserva">Valor $  <span style="color: red;">*</span>:</label>
+      <input type="number" placeholder="Ingrese el valor" id="valor-reserva" name="Valor" [(ngModel)]="reservacion.Valor">
+    </div>
+    <div class="button-container">
+      <button type="submit" class="button">Aceptar Reserva</button>
+      <a routerLink="/principal_empresa" class="button-two" style="margin-left: 10px;">Volver</a>
+    </div>
+  </form>
+</div>
+</body>
+
